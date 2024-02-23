@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ url_for('static', filename='styless.css') }}" rel="stylesheet">
+  <script src="{{url_for('static', filename='scriptss.js')}}" defer></script>
+  <script src="https://code.highcharts.com/stock/highstock.js"></script>
+  <title>Stock Search</title>
+</head>
+
+
+
+<body>
+    <form action="" method="GET">
+        <div class="search">
+            <div class="title">
+                Stock Search<br>
+            </div><br>
+
+            <div class="searchbar">
+                <button type = "submit" class="sbutton" id="searchBtn">
+                    <img src="{{ url_for('static', filename = 'img/search-solid.svg')}}" width=18px>
+                </button>
+                <input id="userInput" name="userInput" type="search" placeholder="Enter Stock Ticker Symbol" autocomplete="off" required/>
+                <button type="submit" class="sbutton" id="clear-Btn">
+                    <img src="{{ url_for('static', filename = 'img/times-solid.svg')}}" width=18px>
+                </button>
+            </div>
+
+            <div class="back-img">
+                
+            </div>    
+
+        </div>
+        </form>
+
+
+    <div class="result">
+        <div id="result-found-tabrow" class="hide">
+            <button id="compBtn" class="tabBtns active">Company</button>
+            <button id="ssBtn" class="tabBtns">Stock Summary</button>
+            <button id="chartsBtn" class="tabBtns">Charts</button>
+            <button id="newsBtn" class="tabBtns">Latest News</button>
+        </div>
+
+        
+        <div id="comp-container">
+            <div id="logo"></div>
+            <div id="name"></div>
+            <div id="ticker"></div>
+            <div id="excode"></div>
+            <div id="ipo"></div>
+            <div id="category"></div>
+        </div>
+
+
+
+
+        <div id="stock-container">
+            <div id="stock-ticker"></div>
+            <div id="day"></div>
+            <div id="closing"></div>
+            <div id="opening"></div>
+            <div id="high"></div>
+            <div id="low"></div>
+            <div id="change"></div>
+            <div id="cpercent"></div>
+        </div>
+
+        <div id = "rec-container">
+            <div class = "strong-sell"></div>
+            <div class = "block1"></div>
+            <div class = "block2"></div>
+            <div class = "block3"></div>
+            <div class = "block4"></div>
+            <div class = "block5"></div>
+            <div class = "strong-buy"></div>
+        </div>
+            <div id = "trend"></div> 
+       
+
+
+
+
+
+        <div id="charts-container">
+        </div> 
+
+
+
+
+
+        <div id="news-container">
+            <div class="newsPic"></div>
+            <div class="newsText">
+                <div class="newstitle"></div>
+                <div class="date"></div>
+                <div class="link"></div>
+            </div>
+        </div>
+      
+
+
+        <div id="result-notfound">
+            <!--Error: No record has been found, please enter a valid symbol-->
+        </div>
+
+    </div>
+
+</body>
+</html>
