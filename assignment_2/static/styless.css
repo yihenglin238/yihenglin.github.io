@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    width: 1100px;
+    font-family: Arial;
+}
+
+.search {
+	background-color: white;
+    background-size: contain;
+    height: 224px;
+    width: 1100px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: #f5f8f9;
+    line-height: 20px;
+    align-items: center;
+	padding: 10px;
+}
+.title {
+	padding-top: 30px;
+	font-family: Arial;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.back-img {
+	background-image: url("img/back.svg");
+    background-size: contain;
+	width: 1100px;
+	height: auto;
+	background-repeat: no-repeat;
+	
+	color: white;
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 400px;
+}
+
+.searchbar {
+	width: 820px;
+	border-radius: 10px;
+	padding: 3px;
+	background: white;
+	margin-left: 130px;
+	
+}
+
+#userInput {
+	font-size: 20px;
+	color: #333333;
+	margin-left: 30px;
+	padding: 10px;
+	outline: none;
+	border: none;
+	height: 24px;
+	width: 700px;
+	
+}
+
+.sbutton {
+    background: transparent;
+    border-color: transparent;
+}
+
+.result {
+	margin-left:120px;
+	margin-top: 70px;
+
+}
+
+#result-found-tabrow {
+	display: flex;
+    flex-direction: row;
+    background-color: #f5f8f9;
+    grid-gap: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.inline {
+	/*width: 1100px;*/
+	display: flex;
+    flex-direction: row;
+    grid-gap: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#logo {
+	align-items: center;
+	text-align: center;
+	
+}
+
+#comp-container {
+	margin-top: 30px; 
+	position: absolute;
+	left: 400px;
+}
+
+#stock-container {
+	margin-top: 30px; 
+	position: absolute;
+	left: 470px;
+}
+
+#rec-container {
+	margin-top: 220px; 
+	position: absolute;
+	left: 440px;
+}
+
+#trend {
+	margin-top: 260px; 
+	position: absolute;
+	left: 510px;
+}
+
+#news-container {
+	margin-top: 30px; 
+	position: absolute;
+	
+}
+
+.label{
+	align-items: center;
+	text-align: center;
+}
+
+#result-notfound {
+	background-color: #f5f8f9;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 50px;
+	border-radius: 10px;
+}
+
+#rec-container {
+	display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.strong-sell {
+	color: red;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.strong-buy {
+	color: green;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.block1 {
+	background-color: red;
+	font-size: 24px;
+	padding-right: 2px;padding-left: 2px;
+	padding-left: 2px;
+	color: white;
+}
+.block2 {
+	background-color: #B44E39;
+	font-size: 24px;
+	padding-right: 2px;
+	padding-left: 2px;
+	color: white;
+}
+.block3 {
+	background-color: #62A172;
+	font-size: 24px;
+	padding-right: 2px;
+	padding-left: 2px;
+	color: white;
+}
+.block4 {
+	background-color: #3AB658;
+	font-size: 24px;
+	padding-right: 2px;
+	padding-left: 2px;
+	color: white;
+}
+.block5 {
+	background-color: #25F958;
+	font-size: 24px;
+	padding-right: 2px;
+	padding-left: 2px;
+	color: white;
+}
+
+#news-container {
+	width: 960px;
+	background-color: #f5f8f9;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+
+.newsPic {
+	display: block;
+}
+
+.newstitle {
+	text-align: left;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.date {
+
+
+}
+
+.link {
+
+
+}
+
+.newsinline {
+	display: flex;
+    flex-direction: row;
+    grid-gap: 16px;
+}
+
+.space {
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+	border: 6px solid white;
+	margin-left: -20px;
+}
+
+.tabBtns {
+	border: none;
+	outline: none;
+	padding: 15px 15px;
+	background-color: #f5f8f9;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.active, .tabBtns:hover {
+  	background-color: darkgrey;
+  	color: white;
+}
+
+#charts-container {
+	position: absolute;
+	width: 1000px;
+}
+
+.underline {
+	font-size: 14px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	background-color: grey;
+	border: 1px solid grey;
+	
+}
